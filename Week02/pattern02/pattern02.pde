@@ -1,12 +1,24 @@
+int posX = 0;
+int posY = 0;
+
 void setup() {
- size(800,800); 
+ size(800,600); 
 }
 
 void draw() {
+  translate(posX, posY);
   pattern02();
+  if (posY < 600) {
+    if (posX < 800) {
+      posX += 40;
+    } else {
+      posY+= 80;
+      posX = 0;
+    }
+  }
 }
 
-void pattern02(){
+void pattern02() {
   noStroke();
   fill(0);
   rect(0,0,40,10);
