@@ -8,10 +8,8 @@ void setup() {
 }
 
 void draw() {
-  pushMatrix();
   translate(posX, posY);
   pattern1();
-  popMatrix();
   if (posY < 600) {
     if (posX < 800) {
       posX += 50;
