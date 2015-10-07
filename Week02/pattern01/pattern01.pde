@@ -5,7 +5,6 @@ int posY = 0;
 void setup() {
   size(800, 600);
   background(0,255,150);
-  pattern01();
 }
 
 void draw() {
