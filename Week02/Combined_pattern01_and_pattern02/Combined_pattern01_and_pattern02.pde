@@ -17,14 +17,15 @@ void draw() {
       translate(posX, posY);
       if (pattern == 1) {
         pattern01();
+        pattern = 2;
       } else {
         pattern02();
+        pattern = 1;
       }
       posX += 50;
     } else {
       posY+= 60;
       posX = 0;
-      pattern *= -1;
     }
   }
 }

@@ -9,7 +9,6 @@ void setup() {
 }
 
 void draw() {
-  
   if (posY < 600) {
     if (posX < 800) {
       translate(posX, posY);
